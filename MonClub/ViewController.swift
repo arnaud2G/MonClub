@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var myDict:  [String: AnyObject]?
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path) as? [String: AnyObject]
+        }
+        if let myDict = myDict {
+            print(myDict)
+            lblTitle.text = myDict["CFBundleName"] as! String?
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

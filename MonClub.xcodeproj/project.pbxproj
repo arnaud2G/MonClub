@@ -14,6 +14,7 @@
 		A50A76841E696CF400FB4BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A76821E696CF400FB4BA7 /* LaunchScreen.storyboard */; };
 		A50A768F1E696CF500FB4BA7 /* MonClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A768E1E696CF500FB4BA7 /* MonClubTests.swift */; };
 		A50A769A1E696CF500FB4BA7 /* MonClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A76991E696CF500FB4BA7 /* MonClubUITests.swift */; };
+		A50A76A91E69771E00FB4BA7 /* Module.plist in Resources */ = {isa = PBXBuildFile; fileRef = A50A76A81E69771E00FB4BA7 /* Module.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A50A76951E696CF500FB4BA7 /* MonClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonClubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50A76991E696CF500FB4BA7 /* MonClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonClubUITests.swift; sourceTree = "<group>"; };
 		A50A769B1E696CF500FB4BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50A76A81E69771E00FB4BA7 /* Module.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Module.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		A50A766D1E696CF400FB4BA7 = {
 			isa = PBXGroup;
 			children = (
+				A50A76A71E69704100FB4BA7 /* MesClubs */,
 				A50A76781E696CF400FB4BA7 /* MonClub */,
 				A50A768D1E696CF500FB4BA7 /* MonClubTests */,
 				A50A76981E696CF500FB4BA7 /* MonClubUITests */,
@@ -103,6 +106,7 @@
 				A50A76801E696CF400FB4BA7 /* Assets.xcassets */,
 				A50A76821E696CF400FB4BA7 /* LaunchScreen.storyboard */,
 				A50A76851E696CF400FB4BA7 /* Info.plist */,
+				A50A76A81E69771E00FB4BA7 /* Module.plist */,
 			);
 			path = MonClub;
 			sourceTree = "<group>";
@@ -123,6 +127,13 @@
 				A50A769B1E696CF500FB4BA7 /* Info.plist */,
 			);
 			path = MonClubUITests;
+			sourceTree = "<group>";
+		};
+		A50A76A71E69704100FB4BA7 /* MesClubs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MesClubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50A76A91E69771E00FB4BA7 /* Module.plist in Resources */,
 				A50A76841E696CF400FB4BA7 /* LaunchScreen.storyboard in Resources */,
 				A50A76811E696CF400FB4BA7 /* Assets.xcassets in Resources */,
 				A50A767F1E696CF400FB4BA7 /* Main.storyboard in Resources */,
