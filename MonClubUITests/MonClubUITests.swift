@@ -13,6 +13,10 @@ class MonClubUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         
+        let app = XCUIApplication()
+        setupSnapshot(app)
+        app.launch()
+        
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -30,6 +34,10 @@ class MonClubUITests: XCTestCase {
     
     func testExample() {
         // Use recording to get started writing UI tests.
+        snapshot("portrait")
+        XCUIDevice.shared().orientation = .landscapeLeft
+        XCUIDevice.shared().orientation = .landscapeLeft
+        snapshot("landscape")
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
